@@ -1,12 +1,12 @@
-// src/App.js
-
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-      <h1 className="text-4xl font-bold text-blue-600">Welcome to React with Tailwind CSS</h1>
-    </div>
+    <Router>
+      <AppRoutes />
+    </Router>
   );
 }
 
